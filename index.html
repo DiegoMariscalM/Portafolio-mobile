@@ -18,25 +18,24 @@
 <body>
   <header class="header">
     <nav class="navbar grid--container">
-      <a class="navbar__logo" href="#"><i class='bx bxl-dev-to'></i></i></a>
+      <a class="navbar__logo" href="#home"><i class='bx bxl-dev-to'></i></i></a>
 
       <div class="navbar__menu">
-        <a class="btn__close" href=""><i class='bx bx-message-square-x navbar__icon'></i></a>
+        <i class='bx bx-x btn__close navbar__icon'></i>
         <ul class="navbar__list">
-          <li class="navbar__item"><a class="navbar__link" href=""></a>Inicio</li>
-          <li class="navbar__item"><a class="navbar__link" href=""></a>Acerca de mi</li>
-          <li class="navbar__item"><a class="navbar__link" href=""></a>Mis habilidades</li>
-          <li class="navbar__item"><a class="navbar__link" href=""></a>Portafoilio</li>
-          <li class="navbar__item"><a class="navbar__link" href=""></a>Contacto</li>
+          <li class="navbar__item"><a class="navbar__link" href="#home">Inicio</a></li>
+          <li class="navbar__item"><a class="navbar__link" href="#about">Acerca de Mí</a></li>
+          <li class="navbar__item"><a class="navbar__link" href="#projects">Proyectos</a></li>
+          <li class="navbar__item"><a class="navbar__link" href="#contact">Contacto</a></li>
         </ul>
       </div>
 
-      <a class="btn__open" href="#"><i class='bx bx-menu-alt-right navbar__icon'></i></a>
+      <i class='bx bx-menu btn__open navbar__icon'></i>
     </nav>
   </header>
   <main>
 
-    <section class="home">
+    <section id="home" class="home">
       <div class="home__container grid--container">
         <div class="home__image">
           <span></span>
@@ -50,23 +49,23 @@
           </p>
 
           <ul class="home__social">
-            <li class="home__social-item"><a class="home__social-link" href="#">
+            <li class="home__social-item"><a class="home__social-link"  target="_blank" href="https://mx.linkedin.com">
               <i class='bx bxl-linkedin'></i></a></li>
   
-              <li class="home__social-item"><a class="home__social-link" href="#">
+              <li class="home__social-item"><a class="home__social-link" target="_blank" href="https://github.com/DiegoMariscalM">
                 <i class='bx bxl-github'></i></a></li>
             </ul>
 
         </div>
 
         <div class="home__button">
-          <button class="btn btn--primary" type="button">Descarga C.V</button>
+          <button class="btn btn--primary" type="button">Descargar C.V</button>
         </div>
 
       </div>
     </section>
 
-    <section class="about section">
+    <section id="about" class="about section">
       <h2 class="section__title">Acerca de mi</h2>
 
       <div class="about__conatainer grid--container">
@@ -104,6 +103,8 @@
               <span class="about__tag">Puntual</span>
               <span class="about__tag">Proactivo</span>
               <span class="about__tag">Autodidacta</span>
+              <span class="about__tag">Ingles C1</span>
+
             </div>
           </div>
         </div>
@@ -111,8 +112,7 @@
 
     </section>
 
-    <section class="projects section">
-      <section class="projects section">
+      <section id="projects" class="projects section">
         <h2 class="section__title">Proyectos</h2>
   
         <div class="projects__container grid--container">
@@ -143,7 +143,7 @@
               </div>
   
               <div class="projects__info">
-                <h3 class="projects__name">Proyecto 2</h3>
+                <h3 class="projects__name2">Proyecto 2</h3>
                 <p class="projects__description">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
@@ -178,7 +178,7 @@
 
     </section>
 
-    <section class="contact section">
+    <section id="contact" class="contact section">
       <h2 class="section__title">Contacto</h2>
       <div class="contact__container grid--container">
         <div class="contact__info">
@@ -245,15 +245,15 @@
 
         <ul class="footer__socail-list">
           <li class="footer__social-item">
-            <a class="footer__social-link" href="#"><i class='bx bxl-facebook'></i></a>
+            <a class="footer__social-link" target="_blank" href="https://www.facebook.com"><i class='bx bxl-facebook'></i></a>
           </li>
 
           <li class="footer__social-item">
-            <a class="footer__social-link" href="#"><i class='bx bxl-instagram'></i></a>
+            <a class="footer__social-link" target="_blank" href="https://www.instagram.com"><i class='bx bxl-instagram'></i></a>
           </li>
 
           <li class="footer__social-item">
-            <a class="footer__social-link" href="#"><i class='bx bxl-twitter'></i></a>
+            <a class="footer__social-link" target="_blank" href="https://www.twitter.com"><i class='bx bxl-twitter'></i></a>
           </li>
         </ul>
       </div>
