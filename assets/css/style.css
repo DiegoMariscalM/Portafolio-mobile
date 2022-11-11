@@ -448,10 +448,15 @@ padding-top: 2rem;
   color: rgba(255, 255, 0, 0.678);
 }
 
+.about__tags-title {
+  text-align: center;
+}
+
 .about__tags-container {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  text-align: center;
 }
 
 .about__tag {
