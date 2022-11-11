@@ -92,7 +92,7 @@ ul {
 }
 
 a {
-  /* text-decoration: none; */
+  text-decoration: none;
 }
 
 img {
@@ -303,7 +303,7 @@ padding-top: 2rem;
 }
 
 .home .bx:hover {
-  color:#2ca4a8b2;
+  color:#eee;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -377,7 +377,7 @@ padding-top: 2rem;
 .about__info {
   background-color:#e1f5d9;
   position: absolute;
-  bottom: -38%;
+  bottom: -39%;
   border-radius: 20px;
   box-shadow: var(--box-shadow);
   resize: none;
