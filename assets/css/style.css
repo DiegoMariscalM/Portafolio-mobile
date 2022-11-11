@@ -377,7 +377,7 @@ padding-top: 2rem;
 .about__info {
   background-color:#e1f5d9;
   position: absolute;
-  bottom: -39%;
+  bottom: -30%;
   border-radius: 20px;
   box-shadow: var(--box-shadow);
   resize: none;
