@@ -17,6 +17,7 @@
 :root {
   --header-height: 3.75rem ;
   /* Colors*/
+  --back-color: rgba(211, 211, 211, 0.301);
   --bg-color:#581845;
   --text-primary:#dbf7a66e;
   --buttons-color:#435772;
@@ -79,7 +80,7 @@ body {
   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: var(--normal-font-size);
   margin: 0;
-  background-color: rgba(211, 211, 211, 0.301);
+  background-color:var(--back-color);
   /* background-color: rgb(1, 6, 36); */
   /* color: #eee; */
 }
@@ -125,7 +126,7 @@ img {
   transition: transform .3s ease-in-out;
 }
 .btn--primary {
-  background-color:#435772;
+  background-color: #01212263;
   color: #eee;
   border-radius: 25px;
   border: 1px solid #eee;
@@ -149,8 +150,8 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  /* background-color: var(--bg-color); */
-  background-image: url(https://cdn.pixabay.com/photo/2021/07/15/08/43/abstract-6467845_960_720.png);
+  background-color:rgba(0, 0, 0, 0.336);
+  /* background-image: url(https://cdn.pixabay.com/photo/2021/07/15/08/43/abstract-6467845_960_720.png); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -250,16 +251,22 @@ header {
 
 .home {
 background-color: rgb(229, 226, 226);
+background-image: url(https://cdn.wallpapersafari.com/30/65/4svUmZ.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+min-height: 100vh;
+position: relative;
 }
 
 .saludo {
-  color:#923526 ;
+  color:#eee ;
   font-weight: var(--font-bold);
   font-size: var(--font-medium);
 }
 
 .loco {
-  color:#923526 ;
+  color:#eee ;
   font-weight: var(--font-bold);
   font-size: var(--font-medium);
 }
@@ -272,7 +279,7 @@ background-color: rgb(229, 226, 226);
 }
 
 .home__image{
-  width: clamp(min(320px, 100%), 85vw, 445px);
+  width: clamp(min(200px, 100%), 45vw, 445px);
   height: auto;
   margin: 0 auto;
   padding-top: var(--mr-3);
@@ -297,6 +304,9 @@ padding-top: 2rem;
 
 .home .bx:hover {
   color:#2ca4a8b2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bxl-linkedin {
@@ -356,11 +366,27 @@ padding-top: 2rem;
 
 .about {
   margin: 0;
+  margin-top: 13rem;
 }
 
 .about__description {
   text-align: center;
   padding-bottom:3rem;
+}
+
+.about__info {
+  background-color:#e1f5d9;
+  position: absolute;
+  bottom: -38%;
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
+  resize: none;
+}
+
+.about__info:hover {
+  transform: scale(1.15);
+  transition: .3s ease-in-out;
+  box-shadow: 6px 11px 13px 0 #0000009f;
 }
 
 .about__skills {
@@ -421,7 +447,9 @@ padding-top: 2rem;
   padding: .75rem 1.5rem;
   font-weight: var(--font-semi-bold);
   font-size: var(--smaller-font-size);
-  background-color: #2ca4a8b2;
+  background-color:#f83f3ce3;
+  /* background-image: url(https://cdn.wallpapersafari.com/30/65/4svUmZ.jpg); */
+  background-size: cover;
   border-radius: 7px;
   box-shadow: var(--box-shadow);
   color: #eee;
@@ -476,12 +504,17 @@ padding-top: 2rem;
   gap: 1rem;
 }
 
+.projects__button:hover {
+  background-color: #f83f3ce3;
+}
+
 .projects__button {
   padding: .75rem 1.5rem;
-  background-color:#2ca4a8b2;
+  background-color:#f83f3ca2;
   color:#eee;
   box-shadow: var(--box-shadow);
   border-radius: 30px;
+  border: 1px solid ;
 }
 
 /* ============= Contact ============= */
@@ -541,13 +574,18 @@ padding-top: 2rem;
   background-color: var(--text-primary);
   border: 1px solid var(--buttons-color);
   box-shadow: var(--box-shadow);
+  resize: none;
 }
 
 .contact__form-button {
   padding: 1rem ;
-  background-color: var(--buttons-color);
+  background-color:#f83f3ca2;;
   color: #eee;
   border-radius: 15px;
+}
+
+.contact__form-button:hover {
+  background-color:  #f83f3ce3;
 }
 
 /* ============= Footer ============= */
